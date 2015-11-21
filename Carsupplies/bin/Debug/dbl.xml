@@ -1,0 +1,262 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>dbl</name>
+    </assembly>
+    <members>
+        <member name="T:dbl.IdblClass">
+            <summary>
+            数据库连接管理类
+            </summary>
+        </member>
+        <member name="M:dbl.IdblClass.ReadData(System.String,dbl.SqlCmd@,System.Collections.Generic.List{System.Object[]},System.Int32)">
+            <summary>
+            根据字典读取数据
+            </summary>
+            <remarks>其他值代表具体的错误类型</remarks>
+            <param name="key">操作字典key</param>
+            <param name="ds">返回的数据</param>
+            <param name="param">带入的参数</param>
+            <returns>0成功，-1失败</returns>
+        </member>
+        <member name="M:dbl.IdblClass.Update(dbl.SqlCmd)">
+            <summary>
+            更新或插入数据
+            </summary>
+        </member>
+        <member name="M:dbl.IdblClass.LoadKey">
+            <summary>
+            从远程数据库载入操作数据字典
+            </summary>
+        </member>
+        <member name="M:dbl.IdblClass.LoadMessageList">
+            <summary>
+            从远程数据库载入消息字典
+            </summary>
+        </member>
+        <member name="M:dbl.IdblClass.CheckDBLinkState">
+            <summary>
+            检查数据连接
+            </summary>
+        </member>
+        <member name="M:dbl.IdblClass.LinkSetting(System.String)">
+            <summary>
+            设置数据库连接
+            </summary>
+        </member>
+        <member name="T:dbl.DBLClass">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:dbl.DBLClass._sqlKey">
+            <summary>
+            执行的动作集合
+            </summary>
+        </member>
+        <member name="F:dbl.DBLClass._cms_list">
+            <summary>
+            消息提示集合
+            </summary>
+        </member>
+        <member name="F:dbl.DBLClass._break_comp">
+            <summary>
+            正则表达式，取{0}格式的匹配
+            </summary>
+        </member>
+        <member name="M:dbl.DBLClass.get_ColumnSetting(System.Int32,System.Collections.Generic.Dictionary{System.String,dbl.ColumnSetting}@,dbl.SqlListItem@)">
+            <summary>
+            
+            </summary>
+            <param name="sqid"></param>
+            <param name="dcs"></param>
+            <param name="sqli"></param>
+            <returns></returns>
+        </member>
+        <member name="M:dbl.DBLClass.getColumnSettingEx(dbl.SqlCmd)">
+            <summary>
+            获取扩展设置,数据关联列的数据获取
+            </summary>
+            <param name="sqlc"></param>
+        </member>
+        <member name="M:dbl.DBLClass.get_Data(System.String,System.Data.DataTable@)">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:dbl.DBLClass.RefreshColumnSettingLinkData(dbl.SqlCmd@,System.String)">
+            <summary>
+            更新列设置的管理数据
+            </summary>
+            <param name="sqlc"></param>
+            <param name="colname">列名称</param>
+        </member>
+        <member name="M:dbl.DBLClass.set_dataColumn(System.Collections.Generic.Dictionary{System.String,dbl.ColumnSetting},System.Windows.Forms.DataGridView)">
+            <summary>
+            设置表格列显示
+            </summary>
+            <param name="dcs"></param>
+            <param name="dgv"></param>
+        </member>
+        <member name="M:dbl.DBLClass.ReadData(System.String,dbl.SqlCmd@,System.Collections.Generic.List{System.Object[]},System.Int32)">
+            <summary>
+            读取数据
+            </summary>
+            <param name="key">操作的关键字</param>
+            <param name="sqlc"></param>
+            <param name="param">sql语句将带入的参数，id=-1时，如果有参数，注意参数顺序</param>
+            <param name="id">默认为-1</param>
+            <returns>id如果大于-1，确保param有值，且id小于param的数量</returns>
+        </member>
+        <member name="M:dbl.DBLClass.Update(dbl.SqlCmd)">
+            <summary>
+            更新编辑数据，插入数据
+            </summary>
+            <param name="sqlc"></param>
+            <returns></returns>
+        </member>
+        <member name="M:dbl.DBLClass.LoadKey">
+            <summary>
+            从远程数据库载入操作数据字典
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:dbl.DBLClass.__Get_ItemData(System.String,dbl.SqlCmd@)">
+            <summary>
+            获取动作的子项sql
+            </summary>
+            <param name="key"></param>
+            <param name="sqlc"></param>
+        </member>
+        <member name="M:dbl.DBLClass._comp_getIndex(System.String)">
+            <summary>
+            将{0}格式参数字符转换序列数字
+            </summary>
+            <param name="val"></param>
+            <returns>错误返回-1</returns>
+        </member>
+        <member name="M:dbl.DBLClass.CompParamCount(System.String,System.Int32)">
+            <summary>
+            比较参数数量与设定的是否相等
+            </summary>
+            <param name="val"></param>
+            <param name="num"></param>
+            <returns></returns>
+        </member>
+        <member name="M:dbl.DBLClass.LoadMessageList">
+            <summary>
+            从远程数据库载入消息字典
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:dbl.DBLClass.CheckDBLinkState">
+            <summary>
+            测试数据库连接有效性
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:dbl.DBLClass.InitSetting(System.String)">
+            <summary>
+            载入数据库连接设置并初始化连接
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="E:dbl.DBLClass.ShowMessage">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:dbl.DBLClass.ActionList">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:dbl.SqlCmd._sqlList">
+            <summary>
+            SQL语句列表
+            </summary>
+        </member>
+        <member name="F:dbl.SqlCmd._listShowSetting">
+            <summary>
+            表格显示控制查询语句
+            </summary>
+        </member>
+        <member name="M:dbl.SqlCmd.ClearData">
+            <summary>
+            清理子项数据
+            </summary>
+        </member>
+        <member name="M:dbl.SqlCmd.CompleteParamItemCount">
+            <summary>
+            计算拥有参数的子项数量，在读取数据时，需要对比带入的参数数量
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:dbl.SqlCmd.SetColumnSettingDataByTable(System.Data.DataTable)">
+            <summary>
+            载入列设置数据
+            </summary>
+            <param name="dt"></param>
+        </member>
+        <member name="M:dbl.SqlCmd.get_QueryString">
+            <summary>
+            返回所有子项的SQL语句集合
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:dbl.SqlCmd.get_ColumnDefault(System.String,System.Object@)">
+            <summary>
+            获取列默认值
+            </summary>
+            <param name="colname"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="P:dbl.SqlCmd.Key">
+            <summary>
+            操作实例的关键字
+            </summary>
+        </member>
+        <member name="P:dbl.SqlCmd.Inistaled">
+            <summary>
+            子项数据载入标志
+            </summary>
+        </member>
+        <member name="P:dbl.SqlCmd.Window">
+            <summary>
+            数据管理的窗体
+            </summary>
+        </member>
+        <member name="P:dbl.CustemMessageShowArgs.ConsoleShow">
+            <summary>
+            消息显示方式，默认为form模式，如果是console模式，请修改为true
+            </summary>
+        </member>
+        <member name="T:dbl.InitDBClass">
+            <summary>
+            初始化数据 
+            </summary>
+        </member>
+        <member name="M:dbl.InitDBClass.LoadFile(System.String)">
+            <summary>
+            载入数据库创建脚本
+            </summary>
+            <param name="filename"></param>
+            <returns></returns>
+        </member>
+        <member name="M:dbl.InitDBClass.InitDataBase(dbll3.GetDataClass)">
+            <summary>
+            初始化数据库 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:dbl.InitDBClass.InsertBaseData(System.String,dbll3.GetDataClass)">
+            <summary>
+            插入基础数据
+            </summary>
+            <param name="filename"></param>
+            <param name="gdc"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

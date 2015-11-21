@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Data>
+  <title>数据字典</title>
+  <Tables>
+    <title>数据库表名称</title>
+    <item>
+      <name>ActionKeys</name>
+      <col>key,value</col>
+    </item>
+    <item>
+      <name>CustomMessageList</name>
+      <col>id,caption,text,icon,button</col>
+    </item>
+  </Tables>
+</Data>

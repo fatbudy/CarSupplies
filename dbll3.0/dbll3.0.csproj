@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1B9EA4C4-1DCD-47D3-A4B4-55952F87E55A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>dbll3</RootNamespace>
+    <AssemblyName>dbll3.0</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\dbll3.0.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Actions\Action.cs" />
+    <Compile Include="Actions\Batch.cs" />
+    <Compile Include="Actions\ActionType.cs" />
+    <Compile Include="DataSetting\ColumnCollection.cs" />
+    <Compile Include="DataSetting\ColumnSchema.cs" />
+    <Compile Include="DataSetting\DatabaseSchema.cs" />
+    <Compile Include="DataSetting\DataSchema.cs" />
+    <Compile Include="DataSetting\InColumnSchema.cs" />
+    <Compile Include="DataSetting\OutColumnSchema.cs" />
+    <Compile Include="DataSetting\XmlEnum.cs" />
+    <Compile Include="GetDataClass.cs" />
+    <Compile Include="GetDataClassEx.cs" />
+    <Compile Include="Actions\IAction.cs" />
+    <Compile Include="Actions\IBatch.cs" />
+    <Compile Include="IGetDataClass.cs" />
+    <Compile Include="ILinkStringCreate.cs" />
+    <Compile Include="LinkManage\EditDBLink.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LinkManage\EditDBLink.Designer.cs">
+      <DependentUpon>EditDBLink.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LinkManage\LinkManagementClass.cs" />
+    <Compile Include="LinkManage\LinkStringCreate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LinkManage\LinkStringCreate.Designer.cs">
+      <DependentUpon>LinkStringCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LinkManage\PluginItemClass.cs" />
+    <Compile Include="LinkStringCreate.cs" />
+    <Compile Include="OutPutData\ExcelClass.cs" />
+    <Compile Include="OutPutData\Export.cs" />
+    <Compile Include="OutPutData\ExportArgs.cs" />
+    <Compile Include="OutPutData\ExportProgressArgs.cs" />
+    <Compile Include="OutPutData\export_xml.cs" />
+    <Compile Include="OutPutData\Log\DBLog.cs" />
+    <Compile Include="OutPutData\Log\ILog.cs" />
+    <Compile Include="OutPutData\Log\Logs.cs" />
+    <Compile Include="OutPutData\Log\TextLog.cs" />
+    <Compile Include="OutPutData\publicItem.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Actions\ResultType.cs" />
+    <Compile Include="UC\rtfFormat\KeyItem.cs" />
+    <Compile Include="UC\SQLRichTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UC\TSQLKeyFromat.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\idblink\idblink.csproj">
+      <Project>{BBE7E3B2-C651-422A-B361-0B4D61DA5DB5}</Project>
+      <Name>idblink</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="LinkManage\EditDBLink.resx">
+      <DependentUpon>EditDBLink.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LinkManage\LinkStringCreate.resx">
+      <DependentUpon>LinkStringCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\SQLRichTextBox.resx">
+      <DependentUpon>SQLRichTextBox.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Actions\Action.cd" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="DataSetting\DataSchema.cd" />
+    <None Include="OutPutData\Export.cd" />
+    <None Include="OutPutData\Log\Logs.cd" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

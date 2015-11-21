@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="DataSetting.DataSchema" Collapsed="true">
+    <Position X="11.75" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAIUAAAAAAAAAAAAAABAQAQAAAAAAAAAgAAAgAAAA=</HashCode>
+      <FileName>DataSetting\DataSchema.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataSetting.ColumnSchema">
+    <Position X="2.5" Y="0.5" Width="2.75" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAIgAAAAAAAABEAAAAAEQAABAAAAAAAAAAAACAABA=</HashCode>
+      <FileName>DataSetting\ColumnSchema.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DataSetting.InColumnCollection" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="8.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACIAAAAAAAAAABAQAAAQBAQAAAAAAAAAAAAAAARQIAA=</HashCode>
+      <FileName>DataSetting\ColumnCollection.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.1" Collapsed="true" />
+  </Class>
+  <Class Name="DataSetting.InColumnSchema">
+    <Position X="0.5" Y="3.5" Width="2.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAQAAAAAAABAAAAAAAAABAAAAACCAAA=</HashCode>
+      <FileName>DataSetting\InColumnSchema.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataSetting.OutColumnSchema">
+    <Position X="3.75" Y="3.5" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQCAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DataSetting\OutColumnSchema.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataSetting.ColumnCollection" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="8.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACIAAAAAAAAAABAQAAAQBAQAAAAAAAAAAAAAAARQIAA=</HashCode>
+      <FileName>DataSetting\ColumnCollection.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DataSetting.OutColumnCollection" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="10" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACIAAAAAAAAAABAQAAAQBAQAAAAAAAAAAAAAAARQIAA=</HashCode>
+      <FileName>DataSetting\ColumnCollection.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="dbll3.DatabaseSchema" Collapsed="true">
+    <Position X="10" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DataSetting\DatabaseSchema.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="DataSetting.XmlEnum" Collapsed="true">
+    <Position X="8.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>DataSetting\XmlEnum.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="微软雅黑" Size="9" />
+</ClassDiagram>
