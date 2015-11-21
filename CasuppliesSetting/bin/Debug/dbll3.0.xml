@@ -1,0 +1,641 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>dbll3.0</name>
+    </assembly>
+    <members>
+        <member name="P:dbll3.UC.rtfFormat.Itembase.Keys">
+            <summary>
+            richtextbox中要查找的文本
+            </summary>
+        </member>
+        <member name="M:dbll3.UC.rtfFormat.ItemCollections.get_style(System.String,dbll3.UC.rtfFormat.Itembase@)">
+            <param name="text">需要修改样式的文本或关键字</param>
+        </member>
+        <member name="T:DataSetting.DataSchema">
+            <summary>
+            数据库数据表配置信息
+            </summary>
+        </member>
+        <member name="P:DataSetting.DataSchema.Columns">
+            <summary>
+            数据表数据列基本设置
+            </summary>
+        </member>
+        <member name="P:DataSetting.DataSchema.Name">
+            <summary>
+            数据表名称
+            </summary>
+        </member>
+        <member name="P:DataSetting.DataSchema.OutSetting">
+            <summary>
+            数据导出设置
+            </summary>
+        </member>
+        <member name="P:DataSetting.DataSchema.InSetting">
+            <summary>
+            数据导入设置
+            </summary>
+        </member>
+        <member name="F:dbll3.LinkManage.LinkStringCreate.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:dbll3.LinkManage.LinkStringCreate.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:dbll3.LinkManage.LinkStringCreate.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:DataSetting.ColumnSchema">
+            <summary>
+            数据表列设置
+            </summary>
+        </member>
+        <member name="F:DataSetting.ColumnSchema._alisaname">
+            <summary>
+            别名
+            </summary>
+        </member>
+        <member name="P:DataSetting.ColumnSchema.Name">
+            <summary>
+            数据表列名称
+            </summary>
+        </member>
+        <member name="P:DataSetting.ColumnSchema.AlisaName">
+            <summary>
+            别名，Datagrid或其他方式显示名称
+            </summary>
+        </member>
+        <member name="P:DataSetting.ColumnSchema.Width">
+            <summary>
+            列显示宽度
+            </summary>
+        </member>
+        <member name="F:dbll3.LinkManage.EditDBLink.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:dbll3.LinkManage.EditDBLink.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:dbll3.LinkManage.EditDBLink.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="F:OutPutData.Log.TextLog._filename">
+            <summary>
+            文件名称
+            </summary>
+        </member>
+        <member name="P:OutPutData.Log.TextLog.Filename">
+            <summary>
+            文件名称
+            </summary>
+        </member>
+        <member name="P:dbll3.Actions.Action.ResultType">
+            <summary>
+            执行结果类型
+            </summary>
+        </member>
+        <member name="M:OutPutData.Log.Logs.WriteText(System.String,System.String)">
+            <summary>
+            消息追加至文件结尾，按行写入
+            </summary>
+            <param name="filename">保存文本格式数据的文件名</param>
+            <param name="value">追加的数据信息</param>
+        </member>
+        <member name="M:OutPutData.ExcelClass.checkACE">
+            <summary>
+            检查ACE.OLEDB是否安装，已安装，返回真，否则假
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OutPutData.ExcelClass.create_link_string">
+            <summary>
+            生成链接字符串信息
+            </summary>
+        </member>
+        <member name="M:OutPutData.ExcelClass.Encode(System.Byte[])">
+            <summary>
+            一次编码,二次解码
+            </summary>
+            <param name="data"></param>
+            <returns>简单的字符替换法</returns>
+        </member>
+        <member name="P:OutPutData.ExcelClass.Past2003Ver">
+            <summary>
+            是否是高于2003版本的Excel
+            </summary>
+            <remarks>
+            高于2003版本的需要安装ACE高版本的ODBC驱动，当前版本内不考虑。
+            ACE：Provider=Microsoft.ACE.OLEDB.12.0;
+            http://www.microsoft.com/zh-CN/download/details.aspx?id=13255 2010
+            http://www.microsoft.com/zh-cn/download/details.aspx?id=23734 2007
+            </remarks>
+        </member>
+        <member name="P:OutPutData.ExcelClass.AssemblyName">
+            <summary>
+            命名空间名及实例名
+            </summary>
+            <remarks >用于在实例信息保存时使用</remarks>
+        </member>
+        <member name="F:dbll3.SchemaType.Tables">
+            <summary>
+            数据库所有表
+            </summary>
+        </member>
+        <member name="F:dbll3.SchemaType.Columns">
+            <summary>
+            指定表列信息
+            </summary>
+        </member>
+        <member name="F:dbll3.SchemaType.Indexes">
+            <summary>
+            制定表索引
+            </summary>
+        </member>
+        <member name="F:dbll3.SchemaType.IndexColumns">
+            <summary>
+            索引列
+            </summary>
+        </member>
+        <member name="F:dbll3.SchemaType.Procedures">
+            <summary>
+            数据库所有存储过程
+            </summary>
+        </member>
+        <member name="M:dbll3.IGetDataClass.Save_ILinkStringCreate(System.String)">
+            <summary>
+            保存数据库连接配置信息
+            </summary>
+            <param name="filename">保存配置数据的文件名</param>
+            <returns></returns>
+        </member>
+        <member name="F:dbll3.GetDataClass._sc">
+            <summary>
+            跨线程与GUI交互时，将线程同步操作
+            </summary>
+        </member>
+        <member name="M:dbll3.GetDataClass.RaiseEvent(dbll3.DataOperationErrorMessageArgs)">
+            <summary>
+            触发数据库访问时的相关信息，主要是错误信息
+            </summary>
+            <param name="sql">执行错误的SQL脚本</param>
+            <param name="errmsg">执行时的错误信息</param>
+        </member>
+        <member name="M:dbll3.GetDataClass.raiseevent_sqlec(dbll3.SQLExecuteCompleteArgs)">
+            <summary>
+            批查询完成时的事件触发处理过程
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:dbll3.GetDataClass.raiseevent_ParseResult(dbll3.ParseResultArgs)">
+            <summary>
+            分析SQL语句的结果是否正确返回事件触发
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:dbll3.GetDataClass.IsNoVaild">
+            <summary>
+            验证数据库连接配置是否有效
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:dbll3.GetDataClass.GetTableNames(System.Data.DataTable@,dbll3.SchemaType,System.String)">
+            <summary>
+            获取数据库表信息，或者表结构信息，具体信息参照SchemaType查阅
+            </summary>
+            <param name="table">Tables,Columns,Primary_Keys</param>
+            <param name="SchemaType"></param>
+            <param name="v"></param>
+            <returns></returns>
+        </member>
+        <member name="M:dbll3.GetDataClass.TableToXMLString(System.Data.DataTable,System.Globalization.CultureInfo)">
+            <summary>
+            将DataTable 数据序列化成xml文本数据
+            </summary>
+            <param name="table"></param>
+            <param name="tablename"></param>
+            <param name="ci"></param>
+            <returns></returns>
+        </member>
+        <member name="M:dbll3.GetDataClass.GetTableNames(dbll3.SchemaType,System.String)">
+            <summary>
+            返回数据库内所有表名称的XML格式字符串
+            </summary>
+            <param name="st"></param>
+            <param name="tablename"></param>
+            <returns></returns>
+        </member>
+        <member name="M:dbll3.GetDataClass.GetData(System.String,System.Int32,System.Int32)">
+            <summary>
+            返回执行页数据的XML格式字符串
+            </summary>
+            <param name="sqlstring">查询的sql语句</param>
+            <param name="pageindex">指定页索引</param>
+            <param name="pagesize">指定分页的大小</param>
+            <returns></returns>
+        </member>
+        <member name="M:dbll3.GetDataClass.SetSynchronizationContext(System.Threading.SynchronizationContext)">
+            <summary>
+            设置线程同步因子
+            </summary>
+            <param name="sc"></param>
+        </member>
+        <member name="M:dbll3.GetDataClass.ParseAs(System.String)">
+            <summary>
+            异步分析SQL语句
+            </summary>
+            <param name="sqlStr"></param>
+        </member>
+        <member name="M:dbll3.GetDataClass.Parse(System.String)">
+            <summary>
+            分析SQL语句
+            </summary>
+            <param name="sqlStr"></param>
+            <returns></returns>
+        </member>
+        <member name="M:dbll3.GetDataClass.UpdateData(System.String,System.Data.DataTable)">
+            <summary>
+            更新数据
+            </summary>
+            <param name="sqlstring"></param>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:dbll3.GetDataClass.UpdateData(System.String,System.Data.DataSet)">
+            <summary>
+            DataSet 更新是需要注意各个表之间的关系
+            </summary>
+            <param name="sqlstring"></param>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:dbll3.GetDataClass.Load_ILinkStringCreate(System.String)">
+            <summary>
+            加载数据库配置信息
+            </summary>
+            <param name="setfilename">配置文件名</param>
+            <returns></returns>
+        </member>
+        <member name="M:dbll3.GetDataClass.Save_ILinkStringCreate(System.String)">
+            <summary>
+            保存数据库连接配置信息
+            </summary>
+            <param name="setfilename">保存配置数据的文件名</param>
+            <returns></returns>
+        </member>
+        <member name="E:dbll3.GetDataClass.Message">
+            <summary>
+            数据库访问时错误信息反馈事件
+            </summary>
+        </member>
+        <member name="E:dbll3.GetDataClass.ExecuteCompleted">
+            <summary>
+            数据库批查询完成时事件
+            </summary>
+        </member>
+        <member name="E:dbll3.GetDataClass.ParseResult">
+            <summary>
+            SQL语句错误分析事件
+            </summary>
+        </member>
+        <member name="F:OutPutData.ExportDirectionEnum.DataSource">
+            <summary>
+            数据操作，双向支持，需要数据关联配置信息
+            </summary>
+        </member>
+        <member name="P:OutPutData.IData.Data">
+            <summary>
+            包含数据的数据表，用于交换数据。
+            </summary>
+        </member>
+        <member name="P:OutPutData.IData.Summary">
+            <summary>
+            关于数据表的摘要信息
+            </summary>
+        </member>
+        <member name="M:OutPutData.IExportData.Export">
+            <summary>
+            导出数据存于指定的文件中
+            </summary>
+        </member>
+        <member name="M:OutPutData.IExportData.Export(System.Data.IDbConnection,System.String,OutPutData.ExportTypeEnum,System.Boolean)">
+            <summary>
+            输出指定数据连接中指定表的数据
+            </summary>
+            <param name="con">数据库连接</param>
+            <param name="tn">表名称</param>
+            <param name="et">导出的数据格式</param>
+            <param name="replace">替换目标数据信息</param>
+        </member>
+        <member name="M:OutPutData.IExportData.SetData(System.Data.DataTable)">
+            <summary>
+            设置输出数据
+            </summary>
+            <param name="dt"></param>
+        </member>
+        <member name="P:OutPutData.IExportData.Direction">
+            <summary>
+            数据输出方向
+            </summary>
+        </member>
+        <member name="P:OutPutData.IExportData.SchemaSetting">
+            <summary>
+            数据导入、导出时的架构参照信息
+            </summary>
+        </member>
+        <member name="P:OutPutData.IExportData.ExportLinkString">
+            <summary>
+            数据导入、导出时的架构参照信息
+            </summary>
+        </member>
+        <member name="F:dbll3.LinkManage.LinkManagementClass._listsp">
+            <summary>
+            搜索文件夹列表
+            </summary>
+        </member>
+        <member name="M:dbll3.LinkManage.LinkManagementClass.Search(System.String,System.Boolean)">
+            <summary>
+            搜索指定目录是否包含plugin库文件
+            </summary>
+            <param name="path">指定路径，如果为空，重新搜索当前列表内所有路径</param>
+            <param name="addon">是否添加至列表</param>
+            <returns></returns>
+        </member>
+        <member name="F:dbll3.LinkManage.LinkManagementClass._default_dbsetting_filename">
+            <summary>
+            默认的数据库配置文件名
+            </summary>
+        </member>
+        <member name="P:dbll3.LinkManage.LinkManagementClass.SearchPath">
+            <summary>
+            搜索文件夹列表
+            </summary>
+        </member>
+        <member name="P:dbll3.LinkManage.LinkManagementClass.SearchInterface">
+            <summary>
+            待搜索的接口类型
+            </summary>
+        </member>
+        <member name="T:OutPutData.ExportData">
+            <summary>
+            导出DataTable数据至文件
+            </summary>
+            <remarks>待添加导出DataSet数据的方法  2015-03-03</remarks>
+        </member>
+        <member name="F:OutPutData.ExportData._sc">
+            <summary>
+            前台UI线程
+            </summary>
+        </member>
+        <member name="F:OutPutData.ExportData._up_e">
+            <summary>
+            前台用于UI属性更新的为过函数
+            </summary>
+        </member>
+        <member name="M:OutPutData.ExportData.set_sc(System.Threading.SynchronizationContext,System.Threading.SendOrPostCallback)">
+            <summary>
+            设置前台UI线程及更新委托
+            </summary>
+            <param name="sc"></param>
+            <param name="spc"></param>
+        </member>
+        <member name="F:OutPutData.ExportData.pe_on">
+            <summary>
+            导出数据进度主控制
+            </summary>
+        </member>
+        <member name="F:OutPutData.ExportData.sub_on">
+            <summary>
+            导出数据进度主控制
+            </summary>
+        </member>
+        <member name="F:OutPutData.ExportData._index">
+            <summary>
+            数据表导出时当前导出的数据行位置
+            </summary>
+        </member>
+        <member name="F:OutPutData.ExportData._count">
+            <summary>
+            数据表导出时当前导出的数据行位置
+            </summary>
+        </member>
+        <member name="F:OutPutData.ExportData._data">
+            <summary>
+            导入导出的数据存储表
+            </summary>
+        </member>
+        <member name="F:OutPutData.ExportData._dataset">
+            <summary>
+            待导出数据的数据集
+            </summary>
+        </member>
+        <member name="F:OutPutData.ExportData._isdataset">
+            <summary>
+            是否是数据集数据导出
+            </summary>
+        </member>
+        <member name="M:OutPutData.ExportData.set_pe(OutPutData.ExportProgressArgs)">
+            <summary>
+            数据进度委托，以便在UI线程中同步
+            </summary>
+        </member>
+        <member name="M:OutPutData.ExportData.progress_event(System.Object)">
+            <summary>
+            数据输出进度显示
+            </summary>
+        </member>
+        <member name="M:OutPutData.ExportData.get_text(System.String)">
+            <summary>
+            将数据表信息转换成文本数据
+            </summary>
+            <param name="splitChar">数据列之间的分割字符</param>
+            <returns></returns>
+        </member>
+        <member name="M:OutPutData.ExportData.export_txt(System.String,System.String)">
+            <summary>
+            导出数据并保存至指定名称的文本文件中
+            </summary>
+            <param name="filename">保存的文本文件名</param>
+            <param name="spc">数据列分割字符</param>
+            <returns></returns>
+        </member>
+        <member name="M:OutPutData.ExportData.export_xml(System.String)">
+            <summary>
+            将数据表信息导出至XML文件
+            </summary>
+            <param name="filename">存储数据的xml文件名</param>
+            <returns></returns>
+        </member>
+        <member name="M:OutPutData.ExportData.replaceCharbyXML(System.String)">
+            <summary>
+            替换xml文件中需要转义的字符
+            </summary>
+        </member>
+        <member name="M:OutPutData.ExportData.ve_Excel(System.Object)">
+            <summary>
+            将数据输出至Excel
+            </summary>
+        </member>
+        <member name="F:OutPutData.ExportData._filter_string">
+            <summary>
+            导出类型为excel时，在保存对话框中filter中的选项
+            </summary>
+        </member>
+        <member name="M:OutPutData.ExportData.Export">
+            <summary>
+            将dataTable数据输出至指定文件或数据库
+            </summary>
+        </member>
+        <member name="M:OutPutData.ExportData.ExportOtherType(System.String,OutPutData.ExportTypeEnum)">
+            <summary>
+            将dataTable数据输出至指定文件或数据库
+            </summary>
+        </member>
+        <member name="M:OutPutData.ExportData._ExportOtherType(System.String,OutPutData.ExportTypeEnum)">
+            <summary>
+            将dataTable数据输出至指定文件或数据库
+            </summary>
+        </member>
+        <member name="M:OutPutData.ExportData.SetData(System.Data.DataTable)">
+            <summary>
+            设置用于输出的数据集
+            </summary>
+        </member>
+        <member name="F:OutPutData.ExportData._direction">
+            <summary>
+            数据导出方向
+            </summary>
+        </member>
+        <member name="F:OutPutData.ExportData._summary">
+            <summary>
+            接口IDATA中的summary
+            </summary>
+        </member>
+        <member name="F:OutPutData.ExportData._schemasetting">
+            <summary>
+            导入导出是，针对数据的不同设置
+            </summary>
+        </member>
+        <member name="F:OutPutData.ExportData._exporttype">
+            <summary>
+            导出类型控制
+            </summary>
+        </member>
+        <member name="F:OutPutData.ExportData._exportlinkstring">
+            <summary>
+            导出数据连接字符串或文件名
+            </summary>
+        </member>
+        <member name="M:OutPutData.ExportData.Export(System.Data.IDbConnection,System.String,OutPutData.ExportTypeEnum,System.Boolean)">
+            <summary>
+            输出指定数据连接中指定表的数据
+            </summary>
+            <param name="con">数据库连接</param>
+            <param name="tn">表名称</param>
+            <param name="et">导出的数据格式</param>
+            <param name="replace">替换目标数据信息</param>
+        </member>
+        <member name="M:OutPutData.ExportData.SetData(System.Data.DataSet)">
+            <summary>
+            设置导出数据的数据集
+            </summary>
+            <param name="ds"></param>
+        </member>
+        <member name="E:OutPutData.ExportData.ExportProgressCompleted">
+            <summary>
+            数据导出进度事件
+            </summary>
+        </member>
+        <member name="E:OutPutData.ExportData.ExportState">
+            <summary>
+            数据导出状态消息
+            </summary>
+        </member>
+        <member name="P:OutPutData.ExportData.Data">
+            <summary>
+            待输出的数据集
+            </summary>
+        </member>
+        <member name="P:OutPutData.ExportData.DataSet">
+            <summary>
+            待导出数据的数据集
+            </summary>
+        </member>
+        <member name="P:OutPutData.ExportData.FileFilter">
+            <summary>
+            数据文件类型
+            </summary>
+        </member>
+        <member name="P:OutPutData.ExportData.Direction">
+            <summary>
+            数据输出方向即是数据库还是文件
+            </summary>
+        </member>
+        <member name="P:OutPutData.ExportData.ExportLinkString">
+            <summary>
+            数据数据文件名或数据库连接字符串
+            </summary>
+        </member>
+        <member name="P:OutPutData.ExportData.SchemaSetting">
+            <summary>
+            数据集与输出设置之间的关联
+            </summary>
+        </member>
+        <member name="P:OutPutData.ExportData.Summary">
+            <summary>
+            备注信息
+            </summary>
+        </member>
+        <member name="P:OutPutData.ExportData.ExportType">
+            <summary>
+            数据输出类型
+            </summary>
+        </member>
+        <member name="P:OutPutData.ExportData.IsDataSetModel">
+            <summary>
+            设置数据导出模式，真，dataset模式，假，datatable模式，默认为假
+            </summary>
+        </member>
+        <member name="T:dbll3.DataOperationErrorMessageArgs">
+            <summary>
+            执行错误的SQL语句及返回的错误信息
+            </summary>
+        </member>
+        <member name="P:dbll3.DataOperationErrorMessageArgs.sqlString">
+            <summary>
+            错误的SQL语句
+            </summary>
+        </member>
+        <member name="P:dbll3.DataOperationErrorMessageArgs.Message">
+            <summary>
+            执行错误的SQL返回的错误信息
+            </summary>
+        </member>
+        <member name="F:dbll3.DatabaseSchema.dataschemaList">
+            <summary>
+            数据库表成员集合
+            </summary>
+        </member>
+        <member name="P:dbll3.DatabaseSchema.DataSchemaList">
+            <summary>
+            数据库表成员集合
+            </summary>
+        </member>
+    </members>
+</doc>
